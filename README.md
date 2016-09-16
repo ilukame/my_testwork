@@ -1,2 +1,2 @@
 # my_testwork
-テスト
+Chainerを使ったテストファイル
