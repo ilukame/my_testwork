@@ -23,10 +23,11 @@ def change(p, a, b):
     p[0][a] = p[0][b]
     p[0][b] = tmp
 
-p = np.array([[3,1,2,6,4,5,7,0,8]])
+p = np.array([[1,0,2,3,4,5,6,7,8]])
+p = np.array([[3,1,2,0,4,5,6,7,8]])
 p = p.astype(np.float32)
 
-with open('mymodel914.pkl', 'rb')as i:
+with open('mymodel916.pkl', 'rb')as i:
     model = pickle.load(i)
 
 print "0 is [left], 1 is [up], 2 is [right], 3 is [down]"
@@ -36,7 +37,7 @@ j = 0
 while ((p[0][0] != 0) or (p[0][1] != 1) or (p[0][2] != 2) or (p[0][3] != 3) or (p[0][4] != 4) or (p[0][5] != 5) or (p[0][6] != 6) or (p[0][7] != 7) or (p[0][8] != 8)):
     direct = predict(p)
     j = j+ 1
-    #0のインデックスをiに
+    #0(空)の場所を調べる
     i = 0
     while(p[0][i] != 0): i += 1
 
@@ -155,12 +156,12 @@ while ((p[0][0] != 0) or (p[0][1] != 1) or (p[0][2] != 2) or (p[0][3] != 3) or (
         if(ran == 0): direct = 0
         else: direct = 1
 
-    #print direct
+    print direct
     
     if(direct == 0): change(p, i, i-1)
     elif(direct == 1): change(p, i, i-3)
     elif(direct == 2): change(p, i, i+1)
     else: change(p, i, i+3)
-    #print p
+    print p
     direct_ago = direct
 print j
