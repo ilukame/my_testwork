@@ -12,6 +12,7 @@ Udp::Udp(string ip, int port){
 
 
 Udp::~Udp(){
+	//TCPの話
 	//int reuse = 1;
 	//setsockopt(sock, SOL_SOCKET, SO_REUSEADDR, (const char*)&reuse, sizeof(reuse));
 	closesocket(sock);
