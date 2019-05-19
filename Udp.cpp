@@ -12,9 +12,8 @@ Udp::Udp(string ip, int port){
 
 
 Udp::~Udp(){
-	// ポート番号を再利用可能にするって書いてあった
-	int reuse = 1;
-	setsockopt(sock, SOL_SOCKET, SO_REUSEADDR, (const char*)&reuse, sizeof(reuse));
+	//int reuse = 1;
+	//setsockopt(sock, SOL_SOCKET, SO_REUSEADDR, (const char*)&reuse, sizeof(reuse));
 	closesocket(sock);
 	WSACleanup();
 }
