@@ -1,9 +1,11 @@
-@echo off
+@ECHO OFF
 
-if "%1" == "" (
-    echo na
-) else if "%1" == "1" (
-    echo 1
-) else (
-    echo 4
+IF "%1" == "" (
+    ECHO na
+) ELSE IF "%1" == "1" (
+    ECHO 1
+    ECHO 2
+) ELSE (
+    ECHO 4
+    ECHO 5
 )
