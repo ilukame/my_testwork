@@ -1,45 +1,38 @@
-<style>
-.column-left{
-  float: left;
-  width: 100px;
-  text-align: left;
-  //background: red;
-  border-right-style:solid
-}
-.column-right{
-  float: left;
-  width: 500px;
-  text-align: left;
-}
-.column-one{
-  float: left;
-  width: 100%;
-  text-align: left;
-}
-</style>
 
-タイトル
+<!-- コメント -->
+
+<link rel="stylesheet" href="common.css">
+
+**トップページ**
 
 <div class="column-left">
 
 ## 目次
-aaa
+
+<br>
+
+<a onclick="clickTest()">aa</a>
+
+<script>
+  function clickTest() {
+    kame.location.href = "E:/ilukame/Desktop/markdown/out/test2.html"
+  }
+</script>
 
 [TEST](E:/ilukame/Desktop/markdown/out/test.html)
 
 [Sub Test]()
 
 </div>
+
 <div class="column-right">
 
+<iframe src="E:/ilukame/Desktop/markdown/out/test.html"  frameborder="" name = "kame"></iframe>
+
 ## Right Column
-aaaa
+
 
 白さが眩しいページです＞＜
 
-# TEST
-
-## Sub Test
-あいうえおあいうええええあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 
 </div>

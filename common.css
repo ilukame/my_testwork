@@ -1,0 +1,17 @@
+
+.column-left{
+  float: left;
+  width: 100px;
+  text-align: left;
+  border-right-style:solid
+}
+.column-right{
+  float: left;
+  width: 500px;
+  text-align: left;
+}
+.column-one{
+  float: left;
+  width: 100%;
+  text-align: left;
+}
