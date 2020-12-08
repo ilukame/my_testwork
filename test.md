@@ -3,10 +3,22 @@
 
 <link rel="stylesheet" href="common.css">
 
-**トップページ**
 
+
+<div flex-direction="row" >
+
+  <iframe src="E:/ilukame/Desktop/markdown/out/test.html" name="left" width="20%" height="900px" frameborder="0">
+  </iframe>
+
+  <iframe src="E:/ilukame/Desktop/markdown/out/test.html" name="right" width="65%" height="900px" frameborder="0">
+  </iframe>
+
+</div>
+
+<!--
 <div class="column-left">
 
+ 
 ## 目次
 
 <br>
@@ -34,5 +46,5 @@
 
 白さが眩しいページです＞＜
 
-
 </div>
+-->
