@@ -1,7 +1,7 @@
 // g++ -o a test.cpp -static -pthread -lws2_32
 #include <iostream>
 #include <string>
-#include "mingw.thread.h"
+#include <thread>
 #include <WinSock2.h> //windows.hより先にincludeらしい
 #include <Windows.h>
 #include <ws2tcpip.h>
